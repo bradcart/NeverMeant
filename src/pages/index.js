@@ -1,22 +1,51 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Link from "gatsby-plugin-transition-link"
+import AudioPlayer from "react-h5-audio-player"
+import "react-h5-audio-player/src/styles.scss"
+import Homecoming from "../sounds/homecoming.mp3"
+// import Layout from "../components/layout"
+// import Image from "../components/image"
+// import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <div className="section">
+    {/* <div className="navbar-audio-player">
+      <audio src={Homecoming} controls autoPlay/>
+    </div> */}
+    <div className="landing">
+      <h1 className="title">NEVER MEANT</h1>
+      <h1 className="subtitle">AUSTIN TEXAS EMO</h1>
+      {/* <h6 className={videoStyles.links}>
+        <span className={videoStyles.link}>about</span>
+        <pre className={videoStyles.x}>  ✘  </pre>
+        <span className={videoStyles.link}>stream</span>
+        <pre className={videoStyles.x}>  ✘  </pre>
+        <span className={videoStyles.link}>store</span>
+      </h6> */}
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <div className="links">
+      <Link to="about">
+        <h6 className="link">about</h6>
+      </Link>
+      <Link to="music">
+        <h6 className="link">music</h6>
+      </Link>
+      <a
+        href="https://nevermeanttx.bigcartel.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h6 className="link">merch</h6>
+      </a>
+    </div>
+    <video autoPlay loop muted className="video">
+      <source src={require(`../images/nm_clip.mp4`)} type="video/mp4" />
+    </video>
+    {/* <div className={videoStyles.footer}>
+      <span className={videoStyles.copyright}>© 2020</span> brad carter
+    </div> */}
+    {/* <button className={videoStyles.button}>about us</button> */}
+  </div>
 )
 
 export default IndexPage
