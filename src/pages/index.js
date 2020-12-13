@@ -38,7 +38,7 @@ const IndexPage = () => (
         <h6 className="link">merch</h6>
       </a>
     </div>
-    <video autoPlay loop muted className="video">
+    <video autoPlay loop muted playsInline className="video">
       <source src={require(`../images/nm_clip.mp4`)} type="video/mp4" />
     </video>
     {/* <div className={videoStyles.footer}>

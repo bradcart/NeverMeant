@@ -45,14 +45,10 @@ const AboutPage = () => (
         </p>
       </div>
       <div className="about-footer">
-        <img src={Spotify} alt="Spotify link" style={{ width: "4.5vw" }} />
-        <img
-          src={AppleMusic}
-          alt="Apple Music link"
-          style={{ width: "4.25vw" }}
-        />
-        <img src={Facebook} alt="Facebook link" style={{ width: "4.6vw" }} />
-        <img src={Instagram} alt="Instagram link" style={{ width: "4.6vw" }} />
+        <img src={Spotify} alt="Spotify link" className="link--spotify" />
+        <img src={AppleMusic} alt="Apple Music link" className="link--apple" />
+        <img src={Facebook} alt="Facebook link" className="link--facebook" />
+        <img src={Instagram} alt="Instagram link" className="link--instagram" />
       </div>
     </div>
   </div>

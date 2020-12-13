@@ -49,6 +49,15 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 2.35vw;
+  @include media("<=sm-laptop") {
+    font-size: 3vw;
+  }
+  @include media("<=tablet") {
+    font-size: 3.25vw;
+  }
+  @include media("<=phone") {
+    font-size: 4vw;
+  }
 }
 a {
   color: ghostwhite;
