@@ -1,4 +1,6 @@
 import React from "react"
+import Link from "gatsby-plugin-transition-link"
+import { motion } from "framer-motion"
 import Image from "../components/image"
 import LeftArrow from "../assets/left-arrow-ai.svg"
 import Spotify from "../images/spotify.png"
@@ -8,7 +10,9 @@ import Instagram from "../images/instagram.png"
 
 const AboutPage = () => (
   <div className="grid">
-    <LeftArrow className="back-btn" />
+    <Link to="/" className="back-btn-wrapper">
+      <LeftArrow className="back-btn" />
+    </Link>
     <p className="paragraph-1">
       <span className="bold">Never Meant </span> is a Texas emo band formed in
       2018 by drummer Rafael Garcia and guitarist/vocalist Michael Hancock.
@@ -39,9 +43,20 @@ const AboutPage = () => (
         learning how to love yourself and stay true to who you are.
       </p>
       <div className="listen-now">
-        <div className="bolder">Listen Now &#62;&#62;</div>
+        <a
+          className="bolder"
+          href="https://linktr.ee/nevermeanttx"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Listen Now &#62;&#62;
+        </a>
         <p className="go-back">
-          or click <span style={{ fontWeight: 700 }}>here</span> to go back.
+          or click{" "}
+          <Link to="/" className="go-back--here">
+            here
+          </Link>{" "}
+          to go back.
         </p>
       </div>
       <div className="about-footer">

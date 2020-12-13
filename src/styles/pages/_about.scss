@@ -1,5 +1,11 @@
 @import "breakpoints/breakpoints";
-
+%link-hover {
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.44, 0.97);
+  &:hover {
+    transform: scale(1.07);
+  }
+}
 .grid {
   background-color: ghostwhite;
   color: black;
@@ -16,13 +22,18 @@
     place-items: center;
   }
 }
-.back-btn {
+.back-btn-wrapper {
   grid-row: 1;
   grid-column: 1;
+  place-self: start;
+  height: fit-content;
+  width: 3vw;
+  @extend %link-hover;
+}
+.back-btn {
   height: 50%;
   // margin: -2% 0 0 -3%;
   width: auto;
-  place-self: start;
 }
 .paragraph-1 {
   grid-row: 2;
@@ -115,9 +126,22 @@
   }
   //   text-align: end;
 }
+.go-back--here {
+  font-weight: 700;
+  color: black;
+  transition: font-size 0.4s cubic-bezier(0.17, 0.67, 0.44, 0.97);
+  &:hover {
+    font-size: 2.1vw;
+    @include media("<=phone") {
+      font-size: 3.85vw;
+    }
+  }
+}
 .bolder {
   @extend .bold;
   font-size: 3.75vw;
+  color: black;
+  @extend %link-hover;
   @include media("<=phone") {
     font-size: 5vw;
   }
