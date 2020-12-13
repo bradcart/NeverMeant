@@ -1,6 +1,5 @@
 @import "breakpoints/breakpoints";
 %link-hover {
-  cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.44, 0.97);
   &:hover {
     transform: scale(1.07);
@@ -159,24 +158,28 @@
 
 .link--spotify {
   width: 4.5vw;
+  @extend %link-hover;
   @include media("<=phone") {
     width: 7.5vw;
   }
 }
 .link--apple {
   width: 4.25vw;
+  @extend %link-hover;
   @include media("<=phone") {
     width: 7.17vw;
   }
 }
 .link--facebook {
   width: 4.6vw;
+  @extend %link-hover;
   @include media("<=phone") {
     width: 7.67vw;
   }
 }
 .link--instagram {
   width: 4.6vw;
+  @extend %link-hover;
   @include media("<=phone") {
     width: 7.67vw;
   }

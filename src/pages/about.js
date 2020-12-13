@@ -60,10 +60,42 @@ const AboutPage = () => (
         </p>
       </div>
       <div className="about-footer">
-        <img src={Spotify} alt="Spotify link" className="link--spotify" />
-        <img src={AppleMusic} alt="Apple Music link" className="link--apple" />
-        <img src={Facebook} alt="Facebook link" className="link--facebook" />
-        <img src={Instagram} alt="Instagram link" className="link--instagram" />
+        <a
+          href="https://open.spotify.com/artist/12mp6G5b4qmwxGyB5d5q4a"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Spotify} alt="Spotify link" className="link--spotify" />
+        </a>
+        <a
+          href="https://music.apple.com/us/artist/never-meant/1461719465"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={AppleMusic}
+            alt="Apple Music link"
+            className="link--apple"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/nevermeanttx"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Facebook} alt="Facebook link" className="link--facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/nevermeanttx/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={Instagram}
+            alt="Instagram link"
+            className="link--instagram"
+          />
+        </a>
       </div>
     </div>
   </div>
