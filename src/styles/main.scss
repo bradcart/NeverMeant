@@ -53,10 +53,10 @@ p {
     font-size: 3vw;
   }
   @include media("<=tablet") {
-    font-size: 3.25vw;
-  }
-  @include media("<=phone") {
     font-size: 4vw;
+  }
+  @include media("<=sm-phone") {
+    font-size: 5.25vw;
   }
 }
 a {

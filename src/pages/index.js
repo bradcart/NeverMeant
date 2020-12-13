@@ -27,9 +27,13 @@ const IndexPage = () => (
       <Link to="about">
         <h6 className="link">about</h6>
       </Link>
-      <Link to="music">
+      <a
+        href="https://open.spotify.com/artist/12mp6G5b4qmwxGyB5d5q4a"
+        target="_blank"
+        rel="noreferrer"
+      >
         <h6 className="link">music</h6>
-      </Link>
+      </a>
       <a
         href="https://nevermeanttx.bigcartel.com/"
         target="_blank"

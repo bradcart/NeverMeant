@@ -15,8 +15,8 @@
   grid-template-columns: 1fr 1fr;
   //   align-items: center;
   justify-items: center;
-  @include media("<=phone") {
-    grid-template-rows: 1fr 4fr 3fr 5fr 4.5fr;
+  @include media("<=tablet") {
+    grid-template-rows: 0.5fr 4fr 3fr 5fr 5fr;
     grid-template-columns: 1fr;
     place-items: center;
   }
@@ -26,19 +26,22 @@
   grid-column: 1;
   place-self: start;
   height: fit-content;
-  width: 3vw;
+  width: fit-content;
   @extend %link-hover;
 }
 .back-btn {
-  height: 50%;
+  height: 3vw;
   // margin: -2% 0 0 -3%;
   width: auto;
+  @include media("<=tablet") {
+    height: 5.5vw;
+  }
 }
 .paragraph-1 {
   grid-row: 2;
   width: 90%;
   height: fit-content;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     grid-column: 1;
     grid-row: 3;
   }
@@ -50,8 +53,11 @@
   font-weight: 900;
   font-style: normal;
   font-size: 3.25vw;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     font-size: 4vw;
+  }
+  @include media("<=sm-phone") {
+    font-size: 5.25vw;
   }
 }
 .paragraph-link {
@@ -68,7 +74,7 @@
   @include media("<=sm-laptop") {
     width: 100%;
   }
-  @include media("<=phone") {
+  @include media("<=tablet") {
     grid-column: 1;
     grid-row: 2;
     width: 90%;
@@ -81,9 +87,12 @@
   width: 80%;
   height: fit-content;
   //   justify-self: start;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     grid-column: 1;
     grid-row: 4;
+  }
+  @include media("<=sm-phone") {
+    width: 90%;
   }
 }
 .row-2 {
@@ -96,12 +105,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     grid-column: 1;
     grid-row: 5;
     height: 92.5%;
     width: 80%;
     justify-self: center;
+  }
+  @include media("<=sm-phone") {
+    height: 100%;
   }
 }
 .listen-now {
@@ -110,7 +122,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: -2%;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     margin-bottom: 0;
   }
 }
@@ -119,7 +131,7 @@
   font-weight: 300;
   font-size: 2vw;
   margin: 0;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     font-size: 3.75vw;
     margin-top: 2%;
   }
@@ -131,7 +143,7 @@
   transition: font-size 0.4s cubic-bezier(0.17, 0.67, 0.44, 0.97);
   &:hover {
     font-size: 2.1vw;
-    @include media("<=phone") {
+    @include media("<=tablet") {
       font-size: 3.85vw;
     }
   }
@@ -141,7 +153,7 @@
   font-size: 3.75vw;
   color: black;
   @extend %link-hover;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     font-size: 5vw;
   }
 }
@@ -151,7 +163,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     width: 80%;
   }
 }
@@ -159,28 +171,28 @@
 .link--spotify {
   width: 4.5vw;
   @extend %link-hover;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     width: 7.5vw;
   }
 }
 .link--apple {
   width: 4.25vw;
   @extend %link-hover;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     width: 7.17vw;
   }
 }
 .link--facebook {
   width: 4.6vw;
   @extend %link-hover;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     width: 7.67vw;
   }
 }
 .link--instagram {
   width: 4.6vw;
   @extend %link-hover;
-  @include media("<=phone") {
+  @include media("<=tablet") {
     width: 7.67vw;
   }
 }

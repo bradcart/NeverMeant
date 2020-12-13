@@ -41,9 +41,9 @@ const Image = ({ src }) => {
   `)
 
   return src === 1 ? (
-    <Img fluid={data.nm1.childImageSharp.fluid} />
+    <Img fluid={data.nm1.childImageSharp.fluid} alt="Never Meant in the stu" />
   ) : src === 2 ? (
-    <Img fluid={data.nm2.childImageSharp.fluid} />
+    <Img fluid={data.nm2.childImageSharp.fluid} alt="the boys" />
   ) : src === 3 ? (
     <Img fluid={data.nm3.childImageSharp.fluid} />
   ) : null
