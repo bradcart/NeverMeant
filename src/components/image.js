@@ -30,13 +30,6 @@ const Image = ({ src }) => {
           }
         }
       }
-      nm3: file(relativePath: { eq: "nm3.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
 
@@ -44,8 +37,6 @@ const Image = ({ src }) => {
     <Img fluid={data.nm1.childImageSharp.fluid} alt="Never Meant in the stu" />
   ) : src === 2 ? (
     <Img fluid={data.nm2.childImageSharp.fluid} alt="the boys" />
-  ) : src === 3 ? (
-    <Img fluid={data.nm3.childImageSharp.fluid} />
   ) : null
 }
 

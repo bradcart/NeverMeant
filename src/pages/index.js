@@ -1,10 +1,8 @@
 import React from "react"
 import Link from "gatsby-plugin-transition-link"
-import AudioPlayer from "react-h5-audio-player"
-import "react-h5-audio-player/src/styles.scss"
-import Homecoming from "../sounds/homecoming.mp3"
-// import Layout from "../components/layout"
-// import Image from "../components/image"
+// import AudioPlayer from "react-h5-audio-player"
+// import "react-h5-audio-player/src/styles.scss"
+// import Homecoming from "../sounds/homecoming.mp3"
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
