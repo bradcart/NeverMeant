@@ -5,6 +5,7 @@
 html {
   box-sizing: border-box;
   background-color: #060505;
+  height: -webkit-fill-available;
 }
 body {
   margin: 0;
@@ -12,6 +13,8 @@ body {
   color: ghostwhite;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   /* word-wrap: break-word; */
   /* font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
