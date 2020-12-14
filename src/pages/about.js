@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-plugin-transition-link"
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import Image from "../components/image"
 import LeftArrow from "../assets/left-arrow-ai.svg"
 import Spotify from "../images/spotify.png"

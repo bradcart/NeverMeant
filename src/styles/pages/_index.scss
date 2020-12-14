@@ -8,6 +8,7 @@
 .section {
   width: 100vw;
   height: 100vh;
+  height: -webkit-fill-available;
   display: grid;
   grid-template-rows: 8% 46% 42%;
   row-gap: 2%;
